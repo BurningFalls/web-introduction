@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            /* background-image: url('../images/rainbow.png'); */
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        table, td, th {
+            border: 1px solid black;
+            border-collapse: collapse;
+            vertical-align: middle;
+            margin: 20px;
+            padding: 10px;
+        }
+    </style>
+    
+</head>
+<body>
+
+<h2>자기소개</h2>
+<li>이름: 폭포</li>
+<li>사는 곳: 관악구</li>
+<li>안녕하세요. 현재를 즐기며 미래를 만드는 개발자 폭포입니다.</li>
+
+<hr />
+
+<h2>인생 영화 BEST5</h2>
+<table style="width:1000px; table-layout:fixed">
+    <tr>
+        <td>순위</td>
+        <td>제목</td>
+        <td>포스터</td>
+        <td>줄거리</td>
+        <td>바로가기</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>백 투 더 퓨쳐</td>
+        <td><img src="../images/01_back_to_the_future.jpeg" width="100" height="100"></td>
+        <td>"백 투 더 퓨쳐"는 청소년 마티와 미친 발명가 독립심이 함께 하는 시간 여행 모험을 다룬다. 우연히 1950년대로 돌아간 마티는 부모 세대와 마주치게 되며, 과거와 현재의 운명을 위협하는 위험에 직면한다.</td>
+        <td><a href="https://serieson.naver.com/v2/movie/89557" target="_blank">클릭</a></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>마이너리티 리포트</td>
+        <td><img src="../images/02_minority_report.jpeg" width="100" height="100"></td>
+        <td>"마이너리티 리포트"는 예측범죄방지 시스템의 오류로 주인공이 평범한 사람으로 예측되면서 의문과 갈등에 빠지는 이야기를 담고 있다. 주인공은 이를 막기 위해 싸우며 자신의 정체성과 자유를 찾아가는 여정을 그린다.</td>
+        <td><a href="https://serieson.naver.com/v2/movie/86357" target="_blank">클릭</a></td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>박물관이 살아있다!</td>
+        <td><img src="../images/03_night_at_the_museum.jpeg" width="100" height="100"></td>
+        <td>"박물관이 살아있다"는 박물관에서 일어나는 신비로운 모험을 다루는 영화이다. 박물관이 밤에 살아나며 역사 속 인물들과 다양한 캐릭터들이 현실로 돌아와 혼란을 일으키지만, 주인공 래리는 이들을 다시 잠재워야 하며 그 과정에서 우정을 형성한다.</td>
+        <td><a href="https://serieson.naver.com/v2/movie/72648" target="_blank">클릭</a></td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>잃어버린 세계를 찾아서</td>
+        <td><img src="../images/04_journey_to_the_center_of_the_earth.webp" width="100" height="100"></td>
+        <td>"잃어버린 세계를 찾아서"는 실종된 아버지를 찾으러 여행을 떠나는 이야기이다. 주인공은 아버지의 흔적을 따라 우주 여행을 하며 용기와 힘을 발견하고, 가족의 소중함을 깨닫게 된다.</td>
+        <td><a href="https://serieson.naver.com/v2/movie/95729" target="_blank">클릭</a></td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>다크 나이트</td>
+        <td><img src="../images/05_the_dark_knight.jpeg" width="100" height="100"></td>
+        <td>"다크 나이트"는 배트맨과 조커의 대립을 그리는 액션 스릴러 영화이다. 배트맨은 조커의 테러를 막기 위해 고담 시티를 지키며, 조커는 혼돈을 일으키며 도시를 위협한다. 이들의 대결에서 도덕적 딜레마와 복수의 고민이 고스란히 담겨 있다.</td>
+        <td><a href="https://serieson.naver.com/v2/movie/2161" target="_blank">클릭</a></td>
+    </tr>
+</table>
+
+<hr />
+
+<h2>방명록</h2>
+
+<form>
+    <div>
+        <p>
+            이름: <input type="text" id="name" autocomplete="off"/>
+        </p>
+    </div>
+    <div>
+        <p>본인 취향 영화</p>
+        <p>
+            <input type="checkbox" name="movie"/>백 투 더 퓨쳐
+            <input type="checkbox" name="movie"/>마이너리티 리포트
+            <input type="checkbox" name="movie"/>박물관이 살아있다!
+            <input type="checkbox" name="movie"/>잃어버린 세계를 찾아서
+            <input type="checkbox" name="movie"/>다크 나이트
+        </p>
+    </div>
+    <div>
+        <button type="button" id="registration">등록</button>
+        <button type="reset" id="cancel">취소</button>
+    </div>
+</form>
+
+<script src="../js/index.js"></script>
+
+</body>
+</html>
