@@ -11,7 +11,3 @@ function showAllert() {
 }
 
 registration_button.addEventListener("click", showAllert);
-
-
-
-
